@@ -1,9 +1,9 @@
 <?php
 include "connect.php";
 
-$nome = 'nome';
-$email = 'email';
-$senha = 'senha';
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
 mysqli_query($link, "insert into login(nome, email, senha) 
 values('$nome','$email','$senha')");
