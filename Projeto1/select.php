@@ -1,7 +1,9 @@
 <?php
 include "connect.php";
 
-$sql = mysqli_query($link, "select * from login;");
+
+$consulta = $_POST['consulta'];
+$sql = mysqli_query($link, "select * from login WHERE nome like '%$consulta%';");
 
 while($vetor = mysqli_fetch_array($sql))
 {
@@ -10,8 +12,8 @@ while($vetor = mysqli_fetch_array($sql))
     $email = $vetor['email'];
     $senha = $vetor['senha'];
 
-    echo "Id : $id<br>";
+    //echo "Id : $id<br>";
     echo "Nome : $nome<br>";
-    echo "Email : $email<br>";
-    echo "Senha : $senha<hr>";
+    //echo "Email : $email<br>";
+    //echo "Senha : $senha<hr>";
 }
