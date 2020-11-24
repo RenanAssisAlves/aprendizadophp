@@ -2,5 +2,5 @@
 include "connect.php";
 
 $nome = "CCM Teste";
-
-mysqli_query($link, "update login set nome = '$nome' where id = 8");
+$senha = 'teste123';
+mysqli_query($link, "update login set nome = '$nome', senha = '$senha' where id = 8");
