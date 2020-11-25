@@ -67,9 +67,9 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit" method="POST" action="pesquisar.php">Buscar cadastro...</button>
+    <form class="form-inline my-2 my-lg-0" method="POST" action="pesquisar.php">
+      <input class="form-control mr-sm-2" name="consulta" type="text" placeholder="Buscar cadastro..." aria-label="Pesquisar">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
     </form>
   </div>
 </nav>
