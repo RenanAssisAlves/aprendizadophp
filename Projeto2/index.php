@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0014)about:internet -->
+<!-- saved from url=(0060)https://getbootstrap.com/docs/4.5/examples/starter-template/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-<link href="Starter%20Template%20·%20Bootstrap_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="arquivos_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -41,7 +41,7 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="Starter%20Template%20·%20Bootstrap_files/starter-template.css" rel="stylesheet">
+    <link href="arquivos_files/starter-template.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -52,21 +52,18 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#">Home <span class="sr-only">(current)</span></a>
-      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Cadastrar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Atualizar</a>
+        </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#">Link</a>
+        <a class="nav-link" href="#">Deletar</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#">Action</a>
-          <a class="dropdown-item" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#">Another action</a>
-          <a class="dropdown-item" href="https://getbootstrap.com/docs/4.5/examples/starter-template/#">Something else here</a>
         </div>
       </li>
     </ul>
@@ -80,12 +77,11 @@
 <main role="main" class="container">
 
   <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <!--EDITAR AQUI -->
   </div>
 
 </main><!-- /.container -->
-<script src="Starter%20Template%20·%20Bootstrap_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="Starter%20Template%20·%20Bootstrap_files/bootstrap.bundle.min.js.download" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="arquivos_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="arquivos_files/bootstrap.bundle.min.js.download" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-</body></html>
+<aside style="z-index: 2147483647;"></aside></body></html>
