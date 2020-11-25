@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Starter Template · Bootstrap</title>
+    <title>CRUD com Front</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
@@ -69,7 +69,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit" method="POST" action="pesquisar.php">Buscar cadastro...</button>
     </form>
   </div>
 </nav>
@@ -77,7 +77,7 @@
 <main role="main" class="container">
 
   <div class="starter-template">
-    <!--EDITAR AQUI -->
+    <h1 align="centr">Escolha uma opção na navbar acima!</h1>
   </div>
 
 </main><!-- /.container -->
