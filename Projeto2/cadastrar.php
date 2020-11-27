@@ -77,7 +77,7 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <form class=".col-sm-6.">
+        <form class=".col-sm-5.">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
