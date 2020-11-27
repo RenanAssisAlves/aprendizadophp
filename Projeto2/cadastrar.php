@@ -77,7 +77,7 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <form style="float:left">
+        <form style="float:left; width: 50%">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -90,7 +90,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
 
-        <form style="float:right">
+        <form style="float:right; width: 50%">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
