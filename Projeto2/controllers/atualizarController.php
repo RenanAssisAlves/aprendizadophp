@@ -14,4 +14,5 @@ if($cad == 0)
     $numero = $_GET['numero'];
 
     mysqli_query($link, "update cliente set nome = '$nome', email = '$email', senha = '$senha' where cliente_id = '$id'");
+    header('location:../atualizar.php');
 }
