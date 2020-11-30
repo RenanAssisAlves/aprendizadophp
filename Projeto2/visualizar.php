@@ -79,7 +79,7 @@
     <div class="starter-template">
         <h1 align="centr">Escolha uma opção na navbar acima!</h1>
 
-        <? echo <h1>testando</h1> . teste; ?>
+        <? echo <h1>testando</h1>; ?>
     </div>
 
 </main><!-- /.container -->
