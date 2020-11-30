@@ -96,8 +96,9 @@ $cad = $_GET['cad'];
             <input type="email" class="form-control" name="email" placeholder="Digite o novo email">
             <label>Senha</label>
             <input type="password" class="form-control" name="senha" placeholder="Digite a nova senha">
+            <!--
             <label>Endereco Id</label>
-            <!--<input type="password" class="form-control" name="idendereco" placeholder="Digite o novo id do endereco">
+            <input type="password" class="form-control" name="idendereco" placeholder="Digite o novo id do endereco">
             <label>Numero Entrega</label>
             <input type="password" class="form-control" name="numero" placeholder="Digite o novo numero de entrega ndereco">-->
             <button type="submit" class="btn btn-primary">Atualizar</button>

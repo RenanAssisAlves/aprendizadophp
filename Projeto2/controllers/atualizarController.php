@@ -5,6 +5,7 @@ $cad = $_GET['cad'];
 
 if($cad == 0)
 {
+    echo "Cadastrando";
     $id = $_GET['id'];
     $nome = $_GET['nome'];
     $email = $_GET['email'];
