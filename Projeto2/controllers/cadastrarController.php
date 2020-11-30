@@ -23,3 +23,5 @@ mysqli_query($link, "insert into endereco(rua, bairro, cidade_id, cep)
 $idendereco = mysqli_insert_id();
 mysqli_query($link, "insert into cliente(nome, email, senha, entrega_endereco_id, entrega_numero) 
 values('$nome','$email','$senha', '$idendereco', '$numero')");
+
+header('location:..cadastrar.php');
