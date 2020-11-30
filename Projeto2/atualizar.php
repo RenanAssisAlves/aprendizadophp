@@ -78,14 +78,40 @@
 
     <div class="starter-template">
         <h1 align="center">Atualizar cadastros</h1>
+<?
+$exibir = $_GET['exibir'];
+$cad = $_GET['cad'];
+if ($exibir = 1)
+{
+    if($cad = 1)
+    {
+        ?>
+        <p>CADASTRO DE CLIENTE</p>
+            <?
+    }
+    else if($cad = 2)
+    {
+        ?>
+        <p>CADASTRO DE ENDERECO</p>
+        <?
+    }
+}
+else
+{
+    ?>
+        <p> Qual cadastro deseja alterar?</p>
+        <form method="POST" action="?cad=1&exibir=1">
+            <input class="btn btn-primary" type="submit" value="Cliente">
+        </form>
+        <br>
+        <form method="POST" action="?cad=2&exibir=1">
+            <input class="btn btn-primary" type="submit" value="Endereco">
+        </form>
+        <?
+}
+?>
 
-      <p> Qual cadastro deseja alterar?</p>
-        <form method="GET" action="?cad=1&exibir=0">
-            <input type="submit" value="Cliente">
-        </form>
-        <form method="GET" action="?cad=2&exibir=0">
-            <input type="submit" value="Endereco">
-        </form>
+
 
     </div>
 
