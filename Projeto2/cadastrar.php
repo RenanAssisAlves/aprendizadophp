@@ -87,8 +87,7 @@
                 <label>Senha</label>
                 <input type="password" class="form-control" id="senha" placeholder="Digite a sua senha">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-
+            <hl></hl>
             <div class="form-group">
                 <small class="form-text text-muted">Endereço de entrega</small>
                 <label>Rua</label>
@@ -102,6 +101,7 @@
                 <label>CEP</label>
                 <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
             </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
 
