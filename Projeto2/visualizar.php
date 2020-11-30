@@ -79,7 +79,6 @@
     <div class="starter-template">
         <h1 align="centr">Escolha uma opção na navbar acima!</h1>
 
-        <?php echo <h1>testando</h1>; ?>
     </div>
 
 </main><!-- /.container -->
