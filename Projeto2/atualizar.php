@@ -110,7 +110,16 @@ else
         <?
 }
 ?>
-
+?>
+        <p> Qual cadastro deseja alterar?</p>
+        <form method="POST" action="?cad=1&exibir=1">
+            <input class="btn btn-primary" type="submit" value="Cliente">
+        </form>
+        <br>
+        <form method="POST" action="?cad=2&exibir=1">
+            <input class="btn btn-primary" type="submit" value="Endereco">
+        </form>
+        <?
 
 
     </div>
