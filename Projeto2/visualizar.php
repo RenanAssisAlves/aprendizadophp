@@ -137,6 +137,7 @@ while($vetor = mysqli_fetch_array($sql))
                 </div>
             </div>
         </div>
+                </div>
         <?
             }
         }
