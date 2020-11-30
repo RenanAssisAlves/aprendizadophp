@@ -18,5 +18,6 @@ $idcidade = mysqli_query($link,"select cidade_id from cidade where cidade.nome =
 mysqli_query($link, "insert into endereco(rua, bairro, cidade_id, cep)
  values('$rua', '$bairro', '$idcidade', '$cep'");
 
-mysqli_query($link, "insert into cliente(nome, email, senha, enderecoid) 
-values('$nome','$email','$senha')");
+$idendereco = mysqli_insert_id();
+mysqli_query($link, "insert into cliente(nome, email, senha, entrega_endereco_id, entrega_numero) 
+values('$nome','$email','$senha', '$idendereco', '$numero')");
