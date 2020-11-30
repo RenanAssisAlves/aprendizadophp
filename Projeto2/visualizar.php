@@ -103,12 +103,12 @@ while($vetor = mysqli_fetch_array($sql))
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Cliente id </h5><?echo "$id";?>
-          <p class="card-text">Nome: </p><?echo "$nome";?>
-          <p class="card-text">Email: </p><?echo "$email";?>
-          <p class="card-text">Senha: </p><?echo "$senha";?>
-          <p class="card-text">EnderecoID: </p><?echo "$enderecoid";?>
-          <p class="card-text">Numero: </p><?echo "$numero";?>
+        <h5 class="card-title">Cliente id <?echo "$id";?> </h5>
+          <p class="card-text">Nome: <?echo "$nome";?></p>
+          <p class="card-text">Email: <?echo "$email";?></p>
+          <p class="card-text">Senha: <?echo "$senha";?></p>
+          <p class="card-text">EnderecoID: <?echo "$enderecoid";?></p>
+          <p class="card-text">Numero: <?echo "$numero";?></p>
       </div>
     </div>
   </div>
