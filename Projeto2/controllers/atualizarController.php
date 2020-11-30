@@ -5,13 +5,12 @@ $cad = $_GET['cad'];
 
 if($cad == 0)
 {
-    echo "Cadastrando";
-    $id = $_GET['id'];
-    $nome = $_GET['nome'];
-    $email = $_GET['email'];
-    $senha = $_GET['senha'];
-    $enderecoid = $_GET['idendereco'];
-    $numero = $_GET['numero'];
+    $id = $_POST['id'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $enderecoid = $_POST['idendereco'];
+    $numero = $_POST['numero'];
 
     mysqli_query($link, "update cliente set nome = '$nome', email = '$email', senha = '$senha' where cliente_id = '$id'");
     header('location:../atualizar.php');
