@@ -78,7 +78,7 @@
 
     <div class="starter-template">
         <h1 align="center">Escolha uma opção na navbar acima!</h1>
-    <?php echo "teste"; ?>
+    <? echo "teste". testado; ?>
     </div>
 
 </main><!-- /.container -->
