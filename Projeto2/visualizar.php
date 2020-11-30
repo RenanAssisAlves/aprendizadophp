@@ -92,12 +92,12 @@ while($vetor = mysqli_fetch_array($sql))
     $enderecoid = $vetor['entrega_endereco_id'];
     $numero = $vetor['entrega_numero'];
 
-    echo "Id : $id<br>";
-    echo "Nome : $nome<br>";
-    echo "Email : $email<br>";
-    echo "Senha : $senha<br>";
-    echo "Endereco_id : $enderecoid <br>";
-    echo "Numero : $numero<br><br>";
+    echo "Id : $id.\n";
+    echo "Nome : $nome.\n";
+    echo "Email : $email.\n";
+    echo "Senha : $senha.\n";
+    echo "Endereco_id : $enderecoid.\n";
+    echo "Numero : $numero.\n";
 
 }
 
