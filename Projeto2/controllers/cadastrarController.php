@@ -1,17 +1,15 @@
 <?php
 include "connect.php";
 
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$rua = $_POST['rua'];
-$numero = $_POST['numero'];
-$bairro = $_POST['bairro'];
-$cidade = $_POST['cidade'];
-$cep = $_POST['cep'];
+$nome = addslashes($_POST['nome']);
+$email = addslashes($_POST['email']);
+$senha = addslashes($_POST['senha']);
+$rua = addslashes($_POST['rua']);
+$numero = addslashes($_POST['numero']);
+$bairro = addslashes($_POST['bairro']);
+$cidade = addslashes($_POST['cidade']);
+$cep = addslashes($_POST['cep']);
 
-
-echo($nome.\n.$email.\n.$senha.\n.$rua.\n.$numero.\n.$bairro.\n.$cidade.\n.$cep);
 mysqli_query($link, "insert into cidade(nome)
 values('$cidade')");
 

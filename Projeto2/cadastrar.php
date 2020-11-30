@@ -81,25 +81,25 @@
             <div class="form-group">
                 <small class="form-text text-muted">Realize o seu cadastro</small>
                 <label>Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
+                <input type="text" class="form-control" nome="nome" placeholder="Digite o seu nome">
                 <label>Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite o seu email">
+                <input type="email" class="form-control" nome="email" placeholder="Digite o seu email">
                 <label>Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite a sua senha">
+                <input type="password" class="form-control" nome="senha" placeholder="Digite a sua senha">
             </div>
             <hr style="color: cyan;">
             <div class="form-group">
                 <small class="form-text text-muted">Endereço de entrega</small>
                 <label>Rua</label>
-                <input type="text" class="form-control" id="rua" placeholder="Digite a Rua">
+                <input type="text" class="form-control" nome="rua" placeholder="Digite a Rua">
                 <label>Número</label>
-                <input type="text" class="form-control" id="numero" placeholder="Digite o número da casa">
+                <input type="text" class="form-control" nome="numero" placeholder="Digite o número da casa">
                 <label>Bairro</label>
-                <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">
+                <input type="text" class="form-control" nome="bairro" placeholder="Digite o Bairro">
                 <label>Cidade</label>
-                <input type="text" class="form-control" id="cidade" placeholder="Digite a Cidade">
+                <input type="text" class="form-control" nome="cidade" placeholder="Digite a Cidade">
                 <label>CEP</label>
-                <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                <input type="text" class="form-control" nome="cep" placeholder="Digite o CEP">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
