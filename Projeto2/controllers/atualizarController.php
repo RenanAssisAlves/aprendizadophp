@@ -13,5 +13,5 @@ if($cad == 0)
     $enderecoid = $_GET['idendereco'];
     $numero = $_GET['numero'];
 
-    mysqli_query($link, "update table cliente set nome = '$nome', email = '$email', senha = '$senha' where cliente_id = '$id'");
+    mysqli_query($link, "update cliente set nome = '$nome', email = '$email', senha = '$senha' where cliente_id = '$id'");
 }
