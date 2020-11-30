@@ -77,7 +77,7 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <form>
+        <form action="controllers/cadastrarController.php" method="POST">
             <div class="form-group">
                 <small class="form-text text-muted">Realize o seu cadastro</small>
                 <label>Nome</label>
@@ -87,7 +87,7 @@
                 <label>Senha</label>
                 <input type="password" class="form-control" id="senha" placeholder="Digite a sua senha">
             </div>
-            <hl></hl>
+            <hr style="color: cyan;">
             <div class="form-group">
                 <small class="form-text text-muted">Endereço de entrega</small>
                 <label>Rua</label>
