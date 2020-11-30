@@ -13,15 +13,14 @@ $cep = addslashes($_POST['cep']);
 mysqli_query($link, "insert into cidade(nome)
 values('$cidade')");
 
-$result = mysqli_query($link,"select cidade_id from cidade where cidade.nome = '$nome')");
+//$result = mysqli_query($link,"select cidade_id from cidade where cidade.nome = '$nome')");
 //$row=$result->fetch_object();
-
-$idcidade = 2;
+$idcidade = mysqli_insert_id($link);;
 
 mysqli_query($link, "insert into endereco(rua, bairro, cidade_id, cep)
  values('$rua', '$bairro', '$idcidade', '$cep')");
 
-$idendereco = mysqli_insert_id();
+$idendereco = mysqli_insert_id($link);
 mysqli_query($link, "insert into cliente(nome, email, senha, entrega_endereco_id, entrega_numero) 
 values('$nome','$email','$senha', '$idendereco', '$numero')");
 header('location:../cadastrar.php');
