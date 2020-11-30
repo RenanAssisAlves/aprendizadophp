@@ -91,16 +91,10 @@ while($vetor = mysqli_fetch_array($sql))
     $senha = $vetor['senha'];
     $enderecoid = $vetor['entrega_endereco_id'];
     $numero = $vetor['entrega_numero'];
-
-    echo "Id : $id.\n";
-    echo "Nome : $nome.\n";
-    echo "Email : $email.\n";
-    echo "Senha : $senha.\n";
-    echo "Endereco_id : $enderecoid.\n";
-    echo "Numero : $numero.\n";
 ?>
+        <br><br><br>
     <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-8">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Cliente id <?echo "$id";?> </h5>
@@ -113,6 +107,29 @@ while($vetor = mysqli_fetch_array($sql))
     </div>
   </div>
         <?
+        $sql2 = mysqli_query($link, "select * from endereco where endereco_id = '$enderecoid';");
+
+        while($vetor2 = mysqli_fetch_array($sql2))
+        {
+            $enderecoid = $vetor2['endereco_id'];
+            $rua = $vetor2['rua'];
+            $bairro = $vetor2['bairro'];
+            $cidadeid = $vetor2['cidade_id'];
+            $cep = $vetor2['cep'];
+        ?>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Endereco id <?echo "$enderecoid";?> </h5>
+                    <p class="card-text">Rua: <?echo "$rua";?></p>
+                    <p class="card-text">Bairro: <?echo "$email";?></p>
+                    <p class="card-text">CidadeID: <?echo "$senha";?></p>
+                    <p class="card-text">Cep: <?echo "$enderecoid";?></p>
+                </div>
+            </div>
+        </div>
+        <?
+        }
 }
 
     ?>
