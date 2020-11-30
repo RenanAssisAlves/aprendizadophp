@@ -82,13 +82,13 @@
 $exibir = $_GET['exibir'];
 $cad = $_GET['cad'];
 
-    if($cad = 1)
+    if($cad == 1)
     {
         ?>
         <p>CADASTRO DE CLIENTE</p>
             <?
     }
-    else if($cad = 2)
+    else if($cad == 2)
     {
         ?>
         <p>CADASTRO DE ENDERECO</p>
