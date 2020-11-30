@@ -92,7 +92,7 @@ while($vetor = mysqli_fetch_array($sql))
     $enderecoid = $vetor['entrega_endereco_id'];
     $numero = $vetor['entrega_numero'];
 ?>
-        <br><br><br><br><br><br>
+        <br><br>
     <div class="row">
   <div class="col-sm-8">
     <div class="card">
@@ -137,6 +137,7 @@ while($vetor = mysqli_fetch_array($sql))
                 </div>
             </div>
         </div>
+        <div class="row">
         <?
             }
         }
