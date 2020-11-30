@@ -1,7 +1,7 @@
 <?php
 include "connect.php";
 
-$nome = addslashes($_POST['nome']);
+$nome = $_POST['nome'];
 $email = addslashes($_POST['email']);
 $senha = addslashes($_POST['senha']);
 $rua = addslashes($_POST['rua']);
@@ -10,7 +10,7 @@ $bairro = addslashes($_POST['bairro']);
 $cidade = addslashes($_POST['cidade']);
 $cep = addslashes($_POST['cep']);
 
-echo("o nome da cidade é ". $nome);
+echo("o nome é ". $nome);
 mysqli_query($link, "insert into cidade(nome)
 values('$cidade')");
 
