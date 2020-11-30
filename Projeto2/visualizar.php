@@ -98,6 +98,20 @@ while($vetor = mysqli_fetch_array($sql))
     echo "Senha : $senha.\n";
     echo "Endereco_id : $enderecoid.\n";
     echo "Numero : $numero.\n";
+?>
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cliente id </h5><?echo "$id";?>
+          <p class="card-text">Nome: </p><?echo "$nome";?>
+          <p class="card-text">Email: </p><?echo "$email";?>
+          <p class="card-text">Senha: </p><?echo "$senha";?>
+          <p class="card-text">EnderecoID: </p><?echo "$enderecoid";?>
+          <p class="card-text">Numero: </p><?echo "$numero";?>
+      </div>
+    </div>
+  </div>
 
 }
 
