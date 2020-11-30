@@ -131,7 +131,7 @@ while($vetor = mysqli_fetch_array($sql))
                     <h5 class="card-title">Endereco id <?echo "$enderecoid";?> </h5>
                     <p class="card-text">Rua: <?echo "$rua";?></p>
                     <p class="card-text">Numero: <?echo "$numero";?></p>
-                    <p class="card-text">Bairro: <?echo "$email";?></p>
+                    <p class="card-text">Bairro: <?echo "$bairro";?></p>
                     <p class="card-text">Cidade: <?echo "$nomecidade";?></p>
                     <p class="card-text">Cep: <?echo "$cep";?></p>
                 </div>

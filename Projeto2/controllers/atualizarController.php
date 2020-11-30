@@ -23,6 +23,6 @@ $rua = $_POST['rua'];
 $bairro = $_POST['bairro'];
 $cep = $_POST['cep'];
 
-mysqli_query($link, "update endereco set rua='$rua', bairro='$bairro', cep='$cep' where endereco_id = '$idendereco'");
+mysqli_query($link, "update endereco set rua='$rua', bairro= '$bairro', cep='$cep' where endereco_id = '$idendereco'");
     header('location:../atualizar.php');
 }
