@@ -21,7 +21,7 @@ if($cad ==1)
 $idendereco = $_POST['id'];
 $rua = $_POST['rua'];
 $bairro = $_POST['bairro'];
-$cep = $_POST['CEP'];
+$cep = $_POST['cep'];
 
 mysqli_query($link, "update endereco set rua='$rua', bairro='$bairro', cep='$cep' where endereco_id = '$idendereco'");
 }
