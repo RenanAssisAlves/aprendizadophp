@@ -77,7 +77,12 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1 align="centr">Escolha uma opção na navbar acima!</h1>
+        <h1 align="center">Atualizar cadastros</h1>
+
+      <p> Qual cadastro deseja alterar?</p>
+        <button action="/teste">Cliente</button>
+        <button>Endereco</button>
+
     </div>
 
 </main><!-- /.container -->
