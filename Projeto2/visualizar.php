@@ -78,7 +78,30 @@
 
     <div class="starter-template">
         <h1 align="center">Escolha uma opção na navbar acima!</h1>
-    <? echo "teste". testado; ?>
+    <?
+    include_once "controllers/connect.php"
+
+$sql = mysqli_query($link, "select * from cliente;");
+
+while($vetor = mysqli_fetch_array($sql))
+{
+    $id = $vetor['cliente_id'];
+    $nome = $vetor['nome'];
+    $email = $vetor['email'];
+    $senha = $vetor['senha'];
+    $enderecoid = $vetor['entrega_endereco_id'];
+    $numero = $vetor['entrega_numero'];
+
+    echo "Id : $id<br>";
+    echo "Nome : $nome<br>";
+    echo "Email : $email<br>";
+    echo "Senha : $senha<br>";
+    echo "Endereco_id : $enderecoid <br>";
+    echo "Numero : $numero<br><br>";
+
+}
+
+    ?>
     </div>
 
 </main><!-- /.container -->
