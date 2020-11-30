@@ -16,6 +16,7 @@ values('$cidade')");
 
 $idcidade = mysqli_query($link,"select cidade_id from cidade where cidade.nome = '$nome')");
 
+$cidadequery = mysqli_fetch_field($idcidade)->cidade_id;
 mysqli_query($link, "insert into endereco(rua, bairro, cidade_id, cep)
  values('$rua', '$bairro', '$idcidade', '$cep'");
 
