@@ -77,8 +77,8 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1 align="centr">Escolha uma opção na navbar acima!</h1>
-
+        <h1 align="center">Escolha uma opção na navbar acima!</h1>
+    <?php echo "teste"; ?>
     </div>
 
 </main><!-- /.container -->
