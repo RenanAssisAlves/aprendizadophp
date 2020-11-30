@@ -86,6 +86,22 @@ $cad = $_GET['cad'];
     {
         ?>
         <p>CADASTRO DE CLIENTE</p>
+
+        <form method="POST" action="controllers/atualizarController.php?cad=0">
+            <label>ID a Atualizar</label>
+            <input type="text" class="form-control" name="id" placeholder="Digite o id">
+            <label>Nome</label>
+            <input type="text" class="form-control" name="nome" placeholder="Digite o novo nome">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Digite o novo email">
+            <label>Senha</label>
+            <input type="password" class="form-control" name="senha" placeholder="Digite a nova senha">
+            <label>Endereco Id</label>
+            <!--<input type="password" class="form-control" name="idendereco" placeholder="Digite o novo id do endereco">
+            <label>Numero Entrega</label>
+            <input type="password" class="form-control" name="numero" placeholder="Digite o novo numero de entrega ndereco">-->
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+        </form>
             <?
     }
     else if($cad == 2)
@@ -94,16 +110,23 @@ $cad = $_GET['cad'];
         <p>CADASTRO DE ENDERECO</p>
         <?
     }
+
+    if($exibir == 0)
+        {
+            ?>
+            <p> Qual cadastro deseja alterar?</p>
+            <form method="POST" action="?cad=1&exibir=0">
+                <input class="btn btn-primary" type="submit" value="Cliente">
+            </form>
+            <br>
+            <form method="POST" action="?cad=2&exibir=0">
+                <input class="btn btn-primary" type="submit" value="Endereco">
+            </form>
+        <?
+        }
 ?>
 
-        <p> Qual cadastro deseja alterar?</p>
-        <form method="POST" action="?cad=1&exibir=1">
-            <input class="btn btn-primary" type="submit" value="Cliente">
-        </form>
-        <br>
-        <form method="POST" action="?cad=2&exibir=1">
-            <input class="btn btn-primary" type="submit" value="Endereco">
-        </form>
+
     </div>
 
 </main><!-- /.container -->
