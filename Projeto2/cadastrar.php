@@ -79,9 +79,13 @@
     <div class="starter-template">
         <form style="float:left; width: 40%">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small class="form-text text-muted">Realize o seu cadastro</small>
+                <label>nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
+                <label>email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite o seu email">
+                <label>senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite a sua senha">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
