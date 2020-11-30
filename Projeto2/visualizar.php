@@ -77,7 +77,7 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1 align="center">Escolha uma opção na navbar acima!</h1>
+        <h1 align="center">Clientes cadastrados</h1>
     <?
     include_once "controllers/connect.php";
 
@@ -92,7 +92,7 @@ while($vetor = mysqli_fetch_array($sql))
     $enderecoid = $vetor['entrega_endereco_id'];
     $numero = $vetor['entrega_numero'];
 ?>
-        <br><br><br>
+        <br><br><br><br><br><br>
     <div class="row">
   <div class="col-sm-8">
     <div class="card">
