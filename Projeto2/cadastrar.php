@@ -86,9 +86,6 @@
                 <input type="email" class="form-control" nome="email" placeholder="Digite o seu email">
                 <label>Senha</label>
                 <input type="password" class="form-control" nome="senha" placeholder="Digite a sua senha">
-            </div>
-            <hr style="color: cyan;">
-            <div class="form-group">
                 <small class="form-text text-muted">Endereço de entrega</small>
                 <label>Rua</label>
                 <input type="text" class="form-control" nome="rua" placeholder="Digite a Rua">

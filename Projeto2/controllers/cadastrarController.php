@@ -10,6 +10,7 @@ $bairro = addslashes($_POST['bairro']);
 $cidade = addslashes($_POST['cidade']);
 $cep = addslashes($_POST['cep']);
 
+echo("o nome da cidade é ". $nome);
 mysqli_query($link, "insert into cidade(nome)
 values('$cidade')");
 
