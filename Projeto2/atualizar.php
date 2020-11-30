@@ -80,8 +80,12 @@
         <h1 align="center">Atualizar cadastros</h1>
 
       <p> Qual cadastro deseja alterar?</p>
-        <input type="submit" value="Cliente" action="?teste=1" method="GET">
-        <input type="submit" value="Endereco">
+        <form method="GET" action="?cad=1&exibir=0">
+            <input type="submit" value="Cliente">
+        </form>
+        <form method="GET" action="?cad=2&exibir=0">
+            <input type="submit" value="Endereco">
+        </form>
 
     </div>
 
