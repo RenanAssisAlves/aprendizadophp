@@ -117,7 +117,7 @@ $cad = $_GET['cad'];
             <label>Bairro</label>
             <input type="text" class="form-control" name="bairro" placeholder="Digite o novo bairro">
             <label>Cep</label>
-            <input type="text" class="form-control" name="senha" placeholder="Digite o novo cep">
+            <input type="text" class="form-control" name="cep" placeholder="Digite o novo cep">
             <!--
             <label>Endereco Id</label>
             <input type="password" class="form-control" name="idendereco" placeholder="Digite o novo id do endereco">
