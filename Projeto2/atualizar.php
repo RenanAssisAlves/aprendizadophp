@@ -109,6 +109,22 @@ $cad = $_GET['cad'];
     {
         ?>
         <p>CADASTRO DE ENDERECO</p>
+        <form method="POST" action="controllers/atualizarController.php?cad=1">
+            <label>ID a Atualizar</label>
+            <input type="text" class="form-control" name="id" placeholder="Digite o id">
+            <label>Rua</label>
+            <input type="text" class="form-control" name="rua" placeholder="Digite a nova rua">
+            <label>Bairro</label>
+            <input type="text" class="form-control" name="bairro" placeholder="Digite o novo bairro">
+            <label>Cep</label>
+            <input type="text" class="form-control" name="senha" placeholder="Digite o novo cep">
+            <!--
+            <label>Endereco Id</label>
+            <input type="password" class="form-control" name="idendereco" placeholder="Digite o novo id do endereco">
+            <label>Numero Entrega</label>
+            <input type="password" class="form-control" name="numero" placeholder="Digite o novo numero de entrega ndereco">-->
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+        </form>
         <?
     }
 

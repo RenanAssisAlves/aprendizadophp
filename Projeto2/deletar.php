@@ -77,7 +77,16 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1 align="centr">Escolha uma opção na navbar acima!</h1>
+        <h1 align="centr">Deletar cadastro</h1>
+
+        <form action="controllers/deletarController.php" method="POST">
+            <div class="form-group">
+                <small class="form-text text-muted">Digite o id do cliente a deletar</small>
+                <label>ID do cliente</label>
+                <input type="text" class="form-control" name="id" placeholder="Id do cliente">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </div>
 
 </main><!-- /.container -->
