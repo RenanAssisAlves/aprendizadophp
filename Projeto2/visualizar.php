@@ -134,6 +134,7 @@ while($vetor = mysqli_fetch_array($sql))
                     <p class="card-text">Bairro: <?echo "$bairro";?></p>
                     <p class="card-text">Cidade: <?echo "$nomecidade";?></p>
                     <p class="card-text">Cep: <?echo "$cep";?></p>
+                    <button class="btn btn-danger">Excluir</button>
                 </div>
             </div>
         </div>
