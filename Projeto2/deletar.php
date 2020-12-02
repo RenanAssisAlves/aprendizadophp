@@ -83,6 +83,7 @@
             <div class="form-group">
                 <small class="form-text text-muted">Digite o id do cliente a deletar</small>
                 <label>ID do cliente</label>
+                <input type="hidden" name="deletar" value="0">
                 <input type="text" class="form-control" name="id" placeholder="Id do cliente">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>

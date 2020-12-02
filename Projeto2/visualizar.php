@@ -135,7 +135,8 @@ while($vetor = mysqli_fetch_array($sql))
                     <p class="card-text">Cidade: <?echo "$nomecidade";?></p>
                     <p class="card-text">Cep: <?echo "$cep";?></p>
                     <form action="controllers/deletarController.php" method="POST">
-                        <input type="hidden" name="id" value="<? echo $enderecoid ?>"></input>
+                        <input type="hidden" name="id" value="<? echo $enderecoid ?>">
+                        <input type="hidden" name="deletar" value="1">
                         <input type="submit" class="btn btn-danger">Excluir</input>
                     </form>
 
