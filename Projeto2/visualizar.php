@@ -107,11 +107,11 @@
                     <?
             if ($rua != null || $numero != null || $bairro != null || $nomecidade != null || $cep != null)
             {
-                echo "6";
+                echo "12";
             }
             else
             {
-                echo "12";
+                echo "6";
             }
             ?>
 ">
