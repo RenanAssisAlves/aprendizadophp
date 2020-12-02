@@ -105,6 +105,12 @@
 
             $vetor2 = mysqli_fetch_array($sql2);
 
+            $enderecoid = null;
+            $rua = null;
+            $bairro = null;
+            $cidadeid = null;
+            $cep = null;
+
             $enderecoid = $vetor2['endereco_id'];
             $rua = $vetor2['rua'];
             $bairro = $vetor2['bairro'];
@@ -120,7 +126,18 @@
             $nomecidade = $vetor3['nome'];
             ?>
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-
+<?
+                    if ($rua != null || $bairro != null || $cidadeid != null || $cep != null)
+                    {
+                        echo "6";
+                    }
+                    else
+                    {
+                        echo"12";
+                    }
+                    ?>
+">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
