@@ -103,8 +103,8 @@
 
             $sql2 = mysqli_query($link, "select * from endereco where endereco_id = '$enderecoid';");
 
-            while ($vetor2 = mysqli_fetch_array($sql2))
-            {
+            $vetor2 = mysqli_fetch_array($sql2);
+
             $enderecoid = $vetor2['endereco_id'];
             $rua = $vetor2['rua'];
             $bairro = $vetor2['bairro'];
@@ -114,8 +114,8 @@
 
             $sql3 = mysqli_query($link, "select * from cidade where cidade_id = '$cidadeid';");
 
-            while ($vetor3 = mysqli_fetch_array($sql3))
-            {
+            $vetor3 = mysqli_fetch_array($sql3);
+
             $cidade_id = $vetor3['endereco_id'];
             $nomecidade = $vetor3['nome'];
             ?>
@@ -156,10 +156,10 @@
         </div>
 
     <?
-    }
 
 
-    }
+
+
 
     }
     ?>
