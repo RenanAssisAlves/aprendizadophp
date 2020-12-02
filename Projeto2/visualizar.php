@@ -146,14 +146,19 @@ while($vetor = mysqli_fetch_array($sql))
                 </div>
             </div>
         </div>
-                </div>
+
         <?
             }
-        }
-}
-
-    ?>
+        ?>
+            </div>
     </div>
+    <?
+        }
+
+}
+?>
+
+
 
 </main><!-- /.container -->
 <script src="arquivos_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
