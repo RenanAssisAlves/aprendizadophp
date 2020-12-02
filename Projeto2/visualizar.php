@@ -100,26 +100,7 @@
         $senha = $vetor['senha'];
         $enderecoid = $vetor['entrega_endereco_id'];
         $numero = $vetor['entrega_numero'];
-        ?>
-        <br><br>
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
-                        <p class="card-text">Nome: <? echo "$nome"; ?></p>
-                        <p class="card-text">Email: <? echo "$email"; ?></p>
-                        <p class="card-text">Senha: <? echo "$senha"; ?></p>
-                        <p class="card-text">EnderecoID: <? echo "$enderecoid"; ?></p>
-                        <form action="controllers/deletarController.php" method="POST">
-                            <input type="hidden" name="id" value="<? echo $id ?>">
-                            <input type="hidden" name="deletar" value="0">
-                            <input type="submit" class="btn btn-danger" value="Excluir">
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <?
+
             $sql2 = mysqli_query($link, "select * from endereco where endereco_id = '$enderecoid';");
 
             while ($vetor2 = mysqli_fetch_array($sql2))
@@ -153,6 +134,24 @@
                             <input type="submit" class="btn btn-danger" value="Excluir">
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
+                    <p class="card-text">Nome: <? echo "$nome"; ?></p>
+                    <p class="card-text">Email: <? echo "$email"; ?></p>
+                    <p class="card-text">Senha: <? echo "$senha"; ?></p>
+                    <p class="card-text">EnderecoID: <? echo "$enderecoid"; ?></p>
+                    <form action="controllers/deletarController.php" method="POST">
+                        <input type="hidden" name="id" value="<? echo $id ?>">
+                        <input type="hidden" name="deletar" value="0">
+                        <input type="submit" class="btn btn-danger" value="Excluir">
+                    </form>
                 </div>
             </div>
         </div>
