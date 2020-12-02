@@ -8,12 +8,12 @@ if ($deletar == 0)
     {
         mysqli_query($link, "delete from cliente where cliente_id = '$iddeletar'");
 
-        header("Refresh");
+        header('location:../visualizar.php');
     }
 
 else if($deletar == 1)
 {
 mysqli_query($link, "delete from endereco where endereco_id = '$iddeletar'");
 
-header("Refresh");
+    header('location:../visualizar.php');
 }
