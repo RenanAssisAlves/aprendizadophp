@@ -137,9 +137,8 @@ while($vetor = mysqli_fetch_array($sql))
                     <form action="controllers/deletarController.php" method="POST">
                         <input type="hidden" name="id" value="<? echo $enderecoid ?>">
                         <input type="hidden" name="deletar" value="1">
-                        <input type="submit" class="btn btn-danger">Excluir</input>
+                        <input type="submit" class="btn btn-danger" value="Excluir">
                     </form>
-
                 </div>
             </div>
         </div>
