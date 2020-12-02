@@ -119,6 +119,23 @@
             $cidade_id = $vetor3['endereco_id'];
             $nomecidade = $vetor3['nome'];
             ?>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
+                                <p class="card-text">Nome: <? echo "$nome"; ?></p>
+                                <p class="card-text">Email: <? echo "$email"; ?></p>
+                                <p class="card-text">Senha: <? echo "$senha"; ?></p>
+                                <p class="card-text">EnderecoID: <? echo "$enderecoid"; ?></p>
+                                <form action="controllers/deletarController.php" method="POST">
+                                    <input type="hidden" name="id" value="<? echo $id ?>">
+                                    <input type="hidden" name="deletar" value="0">
+                                    <input type="submit" class="btn btn-danger" value="Excluir">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
@@ -138,23 +155,6 @@
             </div>
         </div>
 
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
-                    <p class="card-text">Nome: <? echo "$nome"; ?></p>
-                    <p class="card-text">Email: <? echo "$email"; ?></p>
-                    <p class="card-text">Senha: <? echo "$senha"; ?></p>
-                    <p class="card-text">EnderecoID: <? echo "$enderecoid"; ?></p>
-                    <form action="controllers/deletarController.php" method="POST">
-                        <input type="hidden" name="id" value="<? echo $id ?>">
-                        <input type="hidden" name="deletar" value="0">
-                        <input type="submit" class="btn btn-danger" value="Excluir">
-                    </form>
-                </div>
-            </div>
-        </div>
     <?
     }
 
