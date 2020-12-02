@@ -120,7 +120,18 @@
             $nomecidade = $vetor3['nome'];
             ?>
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-
+                    <?
+                    if ($rua != null || $numero != null || $bairro != null || $nomecidade != null || $cep != null)
+                    {
+                        echo "6";
+                    }
+                    else
+                    {
+                        echo "12";
+                    }
+                    ?>
+">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
