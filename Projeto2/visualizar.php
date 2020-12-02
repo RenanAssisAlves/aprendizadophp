@@ -105,13 +105,13 @@
         <div class="row">
             <div class="col-sm-
                     <?
-            if ($rua != null || $numero != null || $bairro != null || $nomecidade != null || $cep != null)
+            if (mysqli_query($link, "select * from endereco where endereco_id = '$enderecoid'"));
             {
-                echo "12";
+                echo "6";
             }
             else
             {
-                echo "6";
+                echo "12";
             }
             ?>
 ">
