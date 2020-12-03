@@ -81,7 +81,7 @@
 <?
 $exibir = $_GET['exibir'];
 $cad = $_GET['cad'];
-
+$id = $_GET['id'];
     if($cad == 1)
     {
         ?>
@@ -89,7 +89,7 @@ $cad = $_GET['cad'];
 
         <form method="POST" action="controllers/atualizarController.php?cad=0">
             <?
-            $id = $_POST['id'];
+
             if ($id != null)
             {
                 ?>

@@ -146,10 +146,7 @@
                                 <p class="card-text">Email: <? echo "$email"; ?></p>
                                 <p class="card-text">Senha: <? echo "$senha"; ?></p>
                                 <p class="card-text">EnderecoID: <? echo "$enderecoid"; ?></p>
-                                <form action="atualizar.php" method="POST">
-                                    <input type="hidden" name="exibir" value="1">
-                                    <input type="hidden" name="cad" value="1">
-                                    <input type="hidden" name="id" value="<?echo $id?>">
+                                <form action="atualizar.php?cad=1&exibir=1&id=<?echo $id?>" method="POST">
                                     <input type="submit" class="btn btn-success" value="Atualizar">
                                 </form>
                                 <br>
@@ -173,10 +170,7 @@
                                     <p class="card-text">Bairro: <? echo "$bairro"; ?></p>
                                     <p class="card-text">Cidade: <? echo "$nomecidade"; ?></p>
                                     <p class="card-text">Cep: <? echo "$cep"; ?></p>
-                                    <form action="atualizar.php" method="POST">
-                                        <input type="hidden" name="exibir" value="1">
-                                        <input type="hidden" name="cad" value="1">
-                                        <input type="hidden" name="id" value="<?echo $enderecoid?>">
+                                    <form action="atualizar.php?cad=2&exibir=1&id=<?echo $enderecoid?>" method="POST">
                                         <input type="submit" class="btn btn-success" value="Atualizar">
                                     </form>
                                     <br>
