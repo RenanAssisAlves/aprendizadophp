@@ -66,12 +66,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="visualizar.php">Visualizar</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="atualizar.php">Atualizar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="deletar.php">Deletar</a>
-            </li>
+            </li>-->
     </div>
     </li>
     </ul>
@@ -151,6 +151,12 @@
                                     <input type="hidden" name="deletar" value="0">
                                     <input type="submit" class="btn btn-danger" value="Excluir">
                                 </form>
+                                <form action="atualizar.php" method="POST">
+                                    <input type="hidden" name="exibir" value="1">
+                                    <input type="hidden" name="cad" value="1">
+                                    <input type="hidden" name="id" value="<?echo $id?>">
+                                    <input type="submit" class="btn btn-success" value="Atualizar">
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -170,6 +176,12 @@
                                         <input type="hidden" name="id" value="<? echo $enderecoid ?>">
                                         <input type="hidden" name="deletar" value="1">
                                         <input type="submit" class="btn btn-danger" value="Excluir">
+                                    </form>
+                                    <form action="atualizar.php" method="POST">
+                                        <input type="hidden" name="exibir" value="1">
+                                        <input type="hidden" name="cad" value="1">
+                                        <input type="hidden" name="id" value="<?echo $enderecoid?>">
+                                        <input type="submit" class="btn btn-success" value="Atualizar">
                                     </form>
                                 </div>
                             </div>

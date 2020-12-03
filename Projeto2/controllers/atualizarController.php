@@ -16,7 +16,7 @@ if($cad == 0)
     header('location:../atualizar.php');
 }
 
-if($cad ==1)
+if($cad == 1)
 {
 $idendereco = addslashes($_POST['id']);
 $rua = addslashes($_POST['rua']);

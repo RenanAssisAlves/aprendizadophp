@@ -58,12 +58,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="visualizar.php">Visualizar</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="atualizar.php">Atualizar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="deletar.php">Deletar</a>
-            </li>
+            </li>-->
     </div>
     </li>
     </ul>

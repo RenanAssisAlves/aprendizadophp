@@ -58,12 +58,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="visualizar.php">Visualizar</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="atualizar.php">Atualizar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="deletar.php">Deletar</a>
-            </li>
+            </li>-->
     </div>
     </li>
     </ul>
@@ -88,8 +88,21 @@ $cad = $_GET['cad'];
         <p>CADASTRO DE CLIENTE</p>
 
         <form method="POST" action="controllers/atualizarController.php?cad=0">
-            <label>ID a Atualizar</label>
-            <input type="text" class="form-control" name="id" placeholder="Digite o id">
+            <?
+            $id = $_POST['id'];
+            if ($id != null)
+            {
+                ?>
+                <input type="hidden" value="<? echo $id ?>" name="id">
+                    <?
+            }
+            else
+            {?>
+                <label>ID a Atualizar</label>
+                <input type="text" class="form-control" name="id" placeholder="Digite o id">
+            <?
+            }?>
+
             <label>Nome</label>
             <input type="text" class="form-control" name="nome" placeholder="Digite o novo nome">
             <label>Email</label>

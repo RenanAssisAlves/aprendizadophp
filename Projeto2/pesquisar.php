@@ -58,12 +58,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="visualizar.php">Visualizar</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="atualizar.php">Atualizar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="deletar.php">Deletar</a>
-            </li>
+            </li>-->
     </div>
     </li>
     </ul>
@@ -77,7 +77,7 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1 align="centr">Escolha uma opção na navbar acima!</h1>
+
     </div>
 
 </main><!-- /.container -->
