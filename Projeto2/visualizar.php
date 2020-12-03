@@ -153,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <? if ($rua != null || $bairro != null || $nomecidade != null || $cep != null
+                    <? if ($rua != null || $bairro != null || $nomecidade != null || $cep != null)
                     {
                         ?>
                         <div class="col-sm-4">
