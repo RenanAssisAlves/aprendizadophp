@@ -130,14 +130,14 @@
 <?
                     if ($rua != null || $bairro != null || $cidadeid != null || $cep != null)
                     {
-                        echo "6";
+                        echo'6">';
                     }
                     else
                     {
-                        echo"12";
+                        echo'12">';
                     }
                     ?>
-">
+
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
