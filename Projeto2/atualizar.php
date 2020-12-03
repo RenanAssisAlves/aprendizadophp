@@ -93,7 +93,8 @@ $id = $_GET['id'];
             if ($id != null)
             {
                 ?>
-                <label>Atualizando id <? echo $id ?></label>
+                <label>Atualizando cliente ID <? echo $id ?></label>
+                <br>
                 <input type="hidden" value="<? echo $id ?>" name="id">
                     <?
             }
@@ -128,7 +129,8 @@ $id = $_GET['id'];
             if ($id != null)
             {
             ?>
-                    <label>Atualizando id <? echo $id ?></label>
+                    <label>Atualizando endereço ID <? echo $id ?></label>
+                <br>
             <input type="hidden" value="<? echo $id ?>" name="id">
             <?
             }
