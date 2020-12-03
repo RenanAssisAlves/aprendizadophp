@@ -93,6 +93,7 @@ $id = $_GET['id'];
             if ($id != null)
             {
                 ?>
+                <label>Atualizando id <? echo $id ?></label>
                 <input type="hidden" value="<? echo $id ?>" name="id">
                     <?
             }
@@ -123,8 +124,20 @@ $id = $_GET['id'];
         ?>
         <p>CADASTRO DE ENDERECO</p>
         <form method="POST" action="controllers/atualizarController.php?cad=1">
-            <label>ID a Atualizar</label>
-            <input type="text" class="form-control" name="id" placeholder="Digite o id">
+            <?
+            if ($id != null)
+            {
+            ?>
+                    <label>Atualizando id <? echo $id ?></label>
+            <input type="hidden" value="<? echo $id ?>" name="id">
+            <?
+            }
+            else
+            {?>
+                <label>ID a Atualizar</label>
+                <input type="text" class="form-control" name="id" placeholder="Digite o id">
+                <?
+            }?>
             <label>Rua</label>
             <input type="text" class="form-control" name="rua" placeholder="Digite a nova rua">
             <label>Bairro</label>
