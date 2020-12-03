@@ -126,15 +126,15 @@
             $nomecidade = $vetor3['nome'];
             ?>
                 <div class="row">
-                    <div class="col-sm-
+
 <?
                     if ($rua != null || $bairro != null || $cidadeid != null || $cep != null)
                     {
-                        echo'6">';
+                        echo'<div class="col-sm-6">';
                     }
                     else
                     {
-                        echo'12">';
+                        echo'<div class="col-sm-12">';
                     }
                     ?>
 
