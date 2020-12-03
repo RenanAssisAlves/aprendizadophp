@@ -125,6 +125,7 @@
             $cidade_id = $vetor3['endereco_id'];
             $nomecidade = $vetor3['nome'];
             ?>
+        <br><br>
                 <div class="row">
 
 <?
