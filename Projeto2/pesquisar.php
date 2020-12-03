@@ -77,8 +77,115 @@
 <main role="main" class="container">
 
     <div class="starter-template">
+        <h1 align="center">Resultado da busca</h1>
+        <?
+        include_once "controllers/connect.php";
+$consulta = $_POST['consulta'];
+        $sql = mysqli_query($link, "select * from cliente where nome like '%$consulta%';");
+
+        while ($vetor = mysqli_fetch_array($sql))
+        {
+        $id = $vetor['cliente_id'];
+        $nome = $vetor['nome'];
+        $email = $vetor['email'];
+        $senha = $vetor['senha'];
+        $enderecoid = $vetor['entrega_endereco_id'];
+        $numero = $vetor['entrega_numero'];
+
+        $sql2 = mysqli_query($link, "select * from endereco where endereco_id = '$enderecoid';");
+
+        $vetor2 = mysqli_fetch_array($sql2);
+
+        $enderecoid = null;
+        $rua = null;
+        $bairro = null;
+        $cidadeid = null;
+        $cep = null;
+
+        $enderecoid = $vetor2['endereco_id'];
+        $rua = $vetor2['rua'];
+        $bairro = $vetor2['bairro'];
+        $cidadeid = $vetor2['cidade_id'];
+        $cep = $vetor2['cep'];
+
+
+        $sql3 = mysqli_query($link, "select * from cidade where cidade_id = '$cidadeid';");
+
+        $vetor3 = mysqli_fetch_array($sql3);
+
+        $cidade_id = $vetor3['endereco_id'];
+        $nomecidade = $vetor3['nome'];
+        ?>
+        <br><br>
+        <div class="row">
+
+            <?
+            if ($rua != null || $bairro != null || $cidadeid != null || $cep != null)
+            {
+                echo'<div class="col-sm-6">';
+            }
+            else
+            {
+                echo'<div class="col-sm-12">';
+            }
+            ?>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cliente id <? echo "$id"; ?> </h5>
+                    <p class="card-text">Nome: <? echo "$nome"; ?></p>
+                    <p class="card-text">Email: <? echo "$email"; ?></p>
+                    <p class="card-text">Senha: <? echo "$senha"; ?></p>
+                    <p class="card-text">EnderecoID: <? echo "$enderecoid"; ?></p>
+                    <form action="atualizar.php?cad=1&exibir=1&id=<?echo $id?>" method="POST">
+                        <input type="submit" class="btn btn-success" value="Atualizar">
+                    </form>
+                    <br>
+                    <form action="controllers/deletarController.php" method="POST">
+                        <input type="hidden" name="id" value="<? echo $id ?>">
+                        <input type="hidden" name="deletar" value="0">
+                        <input type="submit" class="btn btn-danger" value="Excluir">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <? if ($rua != null || $bairro != null || $nomecidade != null || $cep != null)
+        {
+            ?>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Endereco id <? echo "$enderecoid"; ?> </h5>
+                        <p class="card-text">Rua: <? echo "$rua"; ?></p>
+                        <p class="card-text">Numero: <? echo "$numero"; ?></p>
+                        <p class="card-text">Bairro: <? echo "$bairro"; ?></p>
+                        <p class="card-text">Cidade: <? echo "$nomecidade"; ?></p>
+                        <p class="card-text">Cep: <? echo "$cep"; ?></p>
+                        <form action="atualizar.php?cad=2&exibir=1&id=<?echo $enderecoid?>" method="POST">
+                            <input type="submit" class="btn btn-success" value="Atualizar">
+                        </form>
+                        <br>
+                        <form action="controllers/deletarController.php" method="POST">
+                            <input type="hidden" name="id" value="<? echo $enderecoid ?>">
+                            <input type="hidden" name="deletar" value="1">
+                            <input type="submit" class="btn btn-danger" value="Excluir">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <?
+        }?>
 
     </div>
+
+    <?
+
+
+
+
+
+    }
+    ?>
 
 </main><!-- /.container -->
 <script src="arquivos_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

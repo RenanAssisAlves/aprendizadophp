@@ -93,7 +93,7 @@ $id = $_GET['id'];
             if ($id != null)
             {
                 ?>
-                <h3>Atualizando cliente ID <? echo $id ?></h3>>
+                <h3>Atualizando cliente ID <? echo $id ?></h3>
                 <br>
                 <input type="hidden" value="<? echo $id ?>" name="id">
                     <?
